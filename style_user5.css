@@ -14,7 +14,11 @@
     --fondo_naranja_btns: #E94438;
     --fondo_gris_btns: #FDFDFF;
 }
-  
+.borderJaime{
+    border: red solid 3px;
+}
+
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -34,6 +38,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     /* height: 100vh; */
     
 }
@@ -239,3 +244,145 @@ body {
     .seccion_der_u5 .subtotal_u5 p{
         margin-left: 5%;
     }
+
+
+
+    
+/* PARTE RESPONSIVE***************************************************************************** */
+
+@media only screen and (max-width:1292px) {
+
+
+/*--------------------------------------------Carousel-------------------------------------------*/
+.seccion_izq_u5 .carrusel_u5{
+
+}
+    .seccion_izq_u5 .carrusel_u5 .card_naranja_u5{
+        width: 100.54px;
+        height: 238.82px;
+    }
+        .seccion_izq_u5 .carrusel_u5 .card_naranja_u5 p{
+            font-size: 15.7168px;
+
+        }
+        .seccion_izq_u5 .carrusel_u5 .card_naranja_u5 img{
+            width: 60px;
+        }
+
+    .seccion_izq_u5 .carrusel_u5 .card_blanca_u5{
+        width: 100.54px;
+        height: 238.82px;
+    }
+        .seccion_izq_u5 .carrusel_u5 .card_blanca_u5 p{
+            font-size: 15.7168px;
+        }
+        .tomates{
+            width: 60px;
+        }
+        .papas{
+            width: 40px;
+        }
+        .bistec{
+            width: 60px;
+        }
+
+
+}
+
+
+@media only screen and (max-width:1022px) {
+
+/*--------------------------------------------Carousel vertical-------------------------------------------*/
+
+.seccion_der_u5 .card_blanca_orden{
+    width: 234px;/*-----------------------------------------------------------------*/
+    height: 87px;
+}
+
+        .seccion_der_u5 .card_blanca_orden .descripcion_u5 h5{
+            font-size: 13.8776px;
+        }
+        .seccion_der_u5 .card_blanca_orden .descripcion_u5 h6{
+            font-size: 13.8776px;                       
+        }      
+        .seccion_der_u5 .card_blanca_orden .descripcion_u5 .seccion_boton_flecha{
+            width: 47.07px;
+            height: 24.94px;
+            font-size: 13.8776px;
+
+        }
+
+}
+
+/* ************************************************* MEDIA CUERY *****************************************/
+@media only screen and (max-width:780px) {
+    .carrusel_u5 div:nth-child(3){
+        /* display: none;
+        visibility: hidden; */
+        position: absolute;
+        top: -9999px;
+    }
+}
+
+
+/* ************************************************* MEDIA CUERY *****************************************/
+
+@media only screen and (max-width:700px) {
+    .carrusel_u5 div:nth-child(4){
+        /* display: none;
+        visibility: hidden; */
+        position: absolute;
+        top: -9999px;
+    }
+
+    .flechasJaime{
+        width: 20px;
+    }
+
+    .seccion_der_u5 .card_blanca_orden{
+        width: 184px;/*-----------------------------------------------------------------*/
+        height: 87px;
+    }
+
+    /* - - - - - - - - - - - -general - - - - - - - - - - - - - - - -*/
+
+    .seccion_izq_u5{
+        width: 60%;
+
+    }
+
+    .seccion_der_u5{
+        height: 100vh;
+        width: 40%;
+
+    }
+
+    /*------------------LOGO ------------------------*/
+    
+.logo_poweroros{
+    width: 76px;
+    height: 76px;
+    position: fixed;
+    top: 3%;
+    left: 3%;
+}
+
+}
+
+
+/* ************************************************* MEDIA CUERY *****************************************/
+
+@media only screen and (max-width:700px) {
+
+    .seccion_izq_u5{
+        width: 300px;
+
+    }
+
+    .seccion_der_u5{
+        height: 100vh;
+        width: 200px;
+
+    }
+
+}
