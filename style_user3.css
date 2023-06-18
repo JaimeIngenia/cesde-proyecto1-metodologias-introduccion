@@ -18,8 +18,13 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
-    
+    padding: 0; 
+
+}
+
+
+.borderJaime{
+    border: solid 3px red;
 }
 
 body {
@@ -36,10 +41,11 @@ body {
     display: flex;
     flex-direction: row;
     justify-content:center ;
-    align-items: center; 
-    
+    align-items: center;     
+    flex-wrap: wrap-reverse;
 }
-.logo_poweroros{
+
+.logo_poweroros {
     width: 126px;
     height: 126px;
     position: fixed;
@@ -49,22 +55,23 @@ body {
 
 .seccion_izq_u3{
     
-    width: 45%;
+    width: 50%;
 }
     .seccion_izq_u3 img{
+        width: 100%;
     }
 
 .seccion_der_u3{
-    width: 45%;
-    height: 95vh;
+    width: 50%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center; 
 }
     .hijo1{
-        width: 80%;
-        height: 10vh;
+        
+        /* height: 10vh; */
     }
         .hijo1 h1{
             font-family: var(--titulo_principal);
@@ -77,8 +84,8 @@ body {
         }
 
     .hijo2{
-        width: 80%;
-        height: 10vh;
+
+        /* height: 10vh; */
     }
         .hijo2 h1{
             font-family: var(titulo_principal_amarillo);
@@ -110,9 +117,11 @@ body {
             line-height: 26px;
             color: rgba(0, 0, 0, 0.75);
             flex: none;
+            margin: auto;
         }
         .hijo3 img{
-            margin-right: 20px;
+            /* margin-right: 20px; */
+            margin: auto;
         }
     .hijo4{
         width: 80%;
@@ -124,7 +133,8 @@ body {
         background: #FFFFFF;
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
         border-radius: 20px;
-        border: none;   
+        border: none;
+
         
     }
         .hijo4 p{
@@ -134,10 +144,16 @@ body {
             font-size: 20px;
             line-height: 26px;
             color: rgba(0, 0, 0, 0.75);
-            flex: none;
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            margin: auto;
         }
         .hijo4 img{
-            margin-right: 20px;
+            /* margin-right: 20px; */
+            margin: auto;
     }
     .hijo5{
         width: 80%;
@@ -146,9 +162,9 @@ body {
         border-radius: 15px;
         display: flex;
         flex-direction: row;
+        justify-content: center;
         align-items: flex-start;
-        padding: 11px 33px;
-        gap: 10px;
+        align-items: center;
     }
         .hijo5 p{
             font-family: var(--nav1_5);
@@ -165,9 +181,10 @@ body {
             border-radius: 15px;
             display: flex;
             flex-direction: row;
-            align-items: flex-start;
-            padding: 11px 33px;
-            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            /* padding: 11px 33px; */
+            /* gap: 10px; */
         }
             .hijo6 p{
                 font-family: var(--nav1_5);
@@ -178,11 +195,11 @@ body {
                 background-color: #F2F2F2;
             }
             .hijo6 .img1{
-                margin-left: 150px
+                /* margin-left: 150px */
             }
     .hijo7{
         width: 80%;
-        height: 10vh;
+        /* height: 10vh; */
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -242,7 +259,8 @@ body {
             font-weight: 400;
             font-size: 14px;
             line-height: 16px;
-            color: #000000;           
+            color: #000000;      
+            margin: auto;     
         }
         .hijo9 a{
             font-family: var(--subtitulos);
@@ -251,5 +269,148 @@ body {
             font-size: 14px;
             line-height: 16px;
             color: #E94438; 
-            text-decoration: none;          
+            text-decoration: none;  
+            margin: auto;        
         }
+
+
+
+
+        
+
+/* PARTE RESPONSIVE***************************************************************************** */
+
+@media only screen and (max-width:788px) {
+
+
+    .hijo1 h1{
+        font-weight: 400;
+        font-size: 35px;
+    }
+    .hijo2 h1{
+        font-weight: 400;
+        font-size: 35px;
+    }
+
+    .hijo3 p{
+        font-weight: 400;
+        font-size: 15px;
+    }
+    .hijo3 img{
+        width: 25px;
+    }
+    .hijo4 p{
+        font-weight: 400;
+        font-size: 15px;
+    }
+    .hijo4 img{
+        width: 18px;
+    }
+    /*------------ EMAIL Y PASSWORD---------------*/
+    .hijo5{
+        width: 80%;
+        height: 10vh;
+        display: flex;
+        justify-content: space-around;
+        display: flex;
+    }
+        .hijo5 input{
+            width: 110px;
+            /* border: none; */
+            outline: none;
+            background-color: #F2F2F2;
+            font-size: 15px;
+        }
+
+    .hijo6{
+        width: 80%;
+        height: 10vh;
+        display: flex;
+        justify-content: space-around;
+        display: flex;
+    }
+        .hijo6 input{
+            width: 110px;
+
+            /* border: none; */
+            outline: none;
+            background-color: #F2F2F2;
+            font-size: 15px;
+        }
+
+        /* ----------- RECUERDAME--------------*/
+
+        .hijo7{
+            width: 80%;
+            /* height: 10vh; */
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .hijo7 input{
+            margin-right: 8px;
+        }
+            .hijo7 .p1{
+                font-family: var(--subtitulos);
+                font-style: normal;
+                font-weight: 700;
+                font-size: 13px;
+                line-height: 21px;
+                color: #000000;
+                margin-right: 8px;
+            }
+            .hijo7 .p2{
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 21px;
+                color: rgba(0, 0, 0, 0.65);
+                text-decoration: none;
+            }
+        /* ----------------Iniciar sesion------------*/
+
+        .hijo8 input{
+            font-size: 18px;
+        }
+}
+
+
+
+
+        
+
+/* PARTE RESPONSIVE***************************************************************************** */
+
+@media only screen and (max-width:500px) {
+
+    .contenedor_genera_u3{
+        height: auto;
+    }
+
+    .hijo1 h1{
+        font-weight: 400;
+        font-size: 25px;
+    }
+    .hijo2 h1{
+        font-weight: 400;
+        font-size: 25px;
+    }
+
+    .seccion_izq_u3{
+        width: 400px;
+    }
+    .seccion_der_u3{
+
+    }
+
+    .logo_poweroros {
+        width: 76px;
+        height: 76px;
+        position: fixed;
+        top: 3%;
+        left: 3%;
+    }
+}
