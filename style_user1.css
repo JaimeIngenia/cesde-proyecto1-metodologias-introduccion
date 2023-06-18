@@ -28,6 +28,10 @@ body {
     background-size: cover; 
 }
 
+.borderJaime{
+    border: solid red 3px;
+}
+
 .contenedor_general_u1{
     width: 100%;
     display: flex;
@@ -162,18 +166,20 @@ body {
             font-weight: 400;
             font-size: 25px;
             line-height: 24px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            align-content: center;
+    
         }
-            .subtitulo p{
-                text-align: left;
-                position: relative;
-                left: 7%;
-            }
+
         .botones{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            width: 80%;
-            margin-left: -7%;
+            width: 100%;
+
         }
             .btn_derecho{
                 width: 245px;
@@ -197,4 +203,298 @@ body {
         width: 50%;
         display: flex;
         flex-direction: column;
+
     }
+    .cuerpo_u1_izquierda img{
+        margin-top: 10%;
+
+    }
+
+
+/* PARTE RESPONSIVE***************************************************************************** */
+
+@media only screen and (max-width:1292px) {
+    .titulo_principal{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: var(--negro);
+        font-family: var(--titulo_principal);
+        margin-top: 80px;
+    }
+        .titulo_principal h1{
+            font-size: 50px;
+            line-height: 113.19%;
+            /* or 104px */
+            letter-spacing: 0.005em;
+        }
+        .titulo_principal_down{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+            .amarillo{
+                color: var(--amarillo);
+                font-family: var(--titulo_principal_amarillo);
+                margin-right: 25px;
+            }
+
+            .negro{
+                color: var(--negro);
+                font-family: var(--titulo_principal);
+            }
+
+            /*--------------------BOTON INICIAR SESION-----------------*/
+            .seccion3_u1{
+                display: flex;
+                flex-direction: row;
+                width: 20%;
+                justify-content: space-around;
+                font-size: 13px;
+            }   
+                .seccion3_u1 img{
+                    height: 40px;
+                    width: 40px ;
+                }
+    
+                .btn_iniciar_sesion{
+                    width: 165px;
+                    height: 39px;
+                    background: var(--fondo_naranja_btns);
+                    border-radius: 31px;
+                    padding: 16px 32px;
+                    gap: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    border: var(--fondo_naranja_btns);
+                }
+
+                /*-------------------- SUBTITULO -----------------------*/
+                .subtitulo{
+                    font-family: var(--subtitulos);
+                    color: rgba(0, 0, 0, 0.39);
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 24px;
+
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    text-align: center;
+                    align-items: center;
+                }
+
+                /* ------------------HABURGUESA -------------------------*/
+                .cuerpo_u1_izquierda{
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+     
+                }
+                .cuerpo_u1_izquierda img{
+                    margin-top: 20%;
+
+                }
+
+}
+
+
+
+/* PARTE RESPONSIVE***************************************************************************** */
+
+@media only screen and (max-width:926px) {
+    .titulo_principal{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: var(--negro);
+        font-family: var(--titulo_principal);
+        margin-top: 80px;
+    }
+        .titulo_principal h1{
+            font-size: 40px;
+            line-height: 113.19%;
+            /* or 104px */
+            letter-spacing: 0.005em;
+        }
+        .titulo_principal_down{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+            .amarillo{
+                color: var(--amarillo);
+                font-family: var(--titulo_principal_amarillo);
+                margin-right: 25px;
+            }
+
+            .negro{
+                color: var(--negro);
+                font-family: var(--titulo_principal);
+            }
+
+            /*--------------------BOTON INICIAR SESION-----------------*/
+            .seccion3_u1{
+                display: flex;
+                flex-direction: row;
+                width: 20%;
+                justify-content: space-around;
+                font-size: 13px;
+            }   
+                .seccion3_u1 img{
+                    height: 40px;
+                    width: 40px ;
+                }
+    
+                .btn_iniciar_sesion{
+                    width: 165px;
+                    height: 39px;
+                    background: var(--fondo_naranja_btns);
+                    border-radius: 31px;
+                    padding: 16px 32px;
+                    gap: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    border: var(--fondo_naranja_btns);
+                }
+                /*-------------------- SUBTITULO -----------------------*/
+                .subtitulo{
+                    font-family: var(--subtitulos);
+                    color: rgba(0, 0, 0, 0.39);
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 24px;
+
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    text-align: center;
+                    align-items: center;
+                }
+                 /* ------------------HABURGUESA -------------------------*/
+                 .cuerpo_u1_izquierda{
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+
+                }
+                .cuerpo_u1_izquierda img{
+                    margin-top: 30%;
+                }
+}
+
+
+
+
+/* PARTE RESPONSIVE***************************************************************************** */
+
+@media only screen and (max-width:786px) {
+    .titulo_principal{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: var(--negro);
+        font-family: var(--titulo_principal);
+        margin-top: 80px;
+    }
+        .titulo_principal h1{
+            font-size: 20px;
+            line-height: 113.19%;
+            /* or 104px */
+            letter-spacing: 0.005em;
+        }
+
+    /*-------------------- SUBTITULO -----------------------*/
+    .subtitulo{
+        font-family: var(--subtitulos);
+        color: rgba(0, 0, 0, 0.39);
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+        /* ------------------HABURGUESA -------------------------*/
+        .cuerpo_u1_izquierda{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .cuerpo_u1_izquierda img{
+        margin-top: 50%;
+    }
+    /*------------------ botones --------------------------*/
+    .botones{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+
+        font-size: 10px;
+    }
+        .btn_derecho{
+            width: 245px;
+            height: 50px;
+            background: var(--fondo_naranja_btns);
+
+            border-radius: 29px;
+            color: var(--fondo_gris_btns);
+        }
+        .btn_izquierdo{
+            width: 245px;
+            height: 50px;
+            background: var(--fondo_gris_btns);
+            border: 1px solid #E94438;
+            border-radius: 29px;
+            color: var(--fondo_naranja_btns);
+            
+        }
+    /*---------------- SECCION NAVBAR-----------------*/
+    .grupo_u1{
+        font-size: 9px;
+    }
+    /*-----------cuerpo_u1 ---------------*/
+    .cuerpo_u1{
+        flex-wrap: wrap;
+    }
+}
+
+
+/* PARTE RESPONSIVE***************************************************************************** */
+
+@media only screen and (max-width:500px) {
+    .cuerpo_u1{
+
+        justify-content: center;
+        align-items: center;
+    }
+    .cuerpo_u1_izquierda{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    .cuerpo_u1_izquierda img{
+        margin-top: 10%;
+    }
+
+    .cuerpo_u1_derecha{
+        width: 400px;
+        margin-top: -12%;
+    }
+}
